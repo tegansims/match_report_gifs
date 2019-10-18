@@ -58,8 +58,8 @@ handleMouseOver=()=>{
 }
 
 //event listeners
-handlemagic8ballClick=()=>get(randomGifSearchTerm()).then(gifs => gif.src=gifs.data[randomGifObject()].images.original.url);
+handleMagic8ballClick=()=>get(randomGifSearchTerm()).then(gifs => gif.src=gifs.data[randomGifObject()].images.original.url);
 handleDoubleClick=()=>alert(("No, that was a double click. Try again"));
-magic8ball.addEventListener('click', handlemagic8ballClick);
+magic8ball.addEventListener('click', handleMagic8ballClick);
 magic8ball.addEventListener('dblclick',  handleDoubleClick)
 magic8ball.addEventListener('mouseover', handleMouseOver)
